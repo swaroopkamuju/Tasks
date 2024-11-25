@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Table even and odd color</title>
+    <style>
+        table,tr,td,th{
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 20px;
+
+        }
+        table#one tr:nth-child(even){
+            background-color: lightblue;
+        }
+        table#one tr:nth-child(odd){
+            background-color: brown;
+        }
+        table#one Th{
+            background-color: orchid;
+        }
+        caption{
+            font-size: 25px;
+            color: chartreuse;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <table id="one">
+        <caption>Student Information</caption>
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th colspan="2">Contact</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Swaroop</td>
+        <td>8019333355</td>
+        <td>8019333311</td>
+    </tr>
+<tr>
+    <td>2</td>
+    <td>kamuju</td>
+    <td>8019333333</td>
+    <td>8019333322</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Jyothi</td>
+    <td>8019333344</td>
+    <td>8019333333</td>
+</tr>
+    </table>
+    
+</body>
+</html>
